@@ -1,0 +1,238 @@
+@import url('reset.css');
+@import url('font.css');
+
+html, body, ul, div, span, footer{
+	padding: 0;
+	margin: 0 auto;
+	font-size: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #161616;
+}
+
+body#home a#worknav, body#aboutpage a#aboutnav{
+	color: #f3fdff;
+}
+
+header{
+	width: 100%;
+	height: 5em;
+	position: fixed;
+	background-color: #161616;
+}
+
+#container {
+ 	margin: 0 auto;
+ 	position: relative;
+ 	min-height: 100%;
+}
+
+#nav_content h1 {
+	font-family: glasket500;
+	font-size: 1.8em;
+	font-weight: 100;
+	color: #f3fdff;
+	text-transform: uppercase;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+
+#top_bar {
+	height: 4px;
+	width: 100%;
+	background-color: #33a0b7;
+}
+
+#nav_content {
+	height: inherit;
+	padding: 12px;
+	margin: 0 24px;
+}
+
+#nav_content h1 {
+	display: inline-block;
+	margin-left: 20px;
+	vertical-align: middle;
+}
+
+#logo {
+	float: left;
+}
+
+#logo_img {
+	display: inline-block;
+	height: inherit;
+	vertical-align: middle;
+}
+
+nav {
+	float: right;
+	line-height: 3.2em;
+}
+
+nav a {
+	font-family: Kalinga;
+	font-weight: bold;
+	font-size: 1em;color: #DBE4E5;
+	
+	margin-right: 24px;
+	text-transform: uppercase;
+}
+
+#name {
+	float: left;
+	position: absolute;
+	left: 120px;
+}
+
+/*#content {
+	margin-top: 60px;
+	margin-left: 150px;
+	position: relative;
+}
+*/
+
+.work{
+	float: left;
+}
+
+footer {
+	height: 14.9375em;
+	width: 100%;
+    background-image: url('../images/footer.png');
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+}
+
+#footer_bar {
+	height: 5em;
+	width: 100%;
+	background-color: #0a0a0a;
+	opacity: 0.9;
+	filter:alpha(opacity=90); /* For IE8 and earlier */
+	position: absolute;
+	bottom: 0;
+}
+#footer_info{
+	color: #094f5c;
+	font: 12pt Kalinga;
+	text-align: center;
+}
+
+#contact{
+	margin-top: 1.35em;
+}
+
+#copyright{
+	font: 8pt Kalinga;
+}
+
+/* Carousel */
+
+.carousel{
+	overflow: hidden;
+	/*position: relative;*/
+	/*margin-top: 60px;
+	margin-left: 150px;*/
+	padding-top: 6.750em;
+	padding-left: 9.375em;
+	height: 13.750em;
+}
+
+#carousel_content{
+	list-style: none;
+	width: 9999px;
+	position: relative;
+}
+
+#carousel_content img{
+	height: 100%;
+}
+
+#carousel_content li{
+	float: left;
+}
+
+.carousel-left, .carousel-right{
+	position: absolute;
+	padding: 15px 0px;
+	cursor: pointer;
+	cursor: hand;
+	font: 1em Kalinga;
+	color: #33a0b7;
+}
+
+.carousel-left{
+	left: 0;
+	margin-left: 150px;
+}
+
+.carousel-right{
+	right: 0;
+	margin-right: 150px;
+}
+
+.lightbox-cont{
+	position: fixed;
+	z-index: 998;
+	top: 0;
+	bottom: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .75;
+}
+
+.lightbox{
+	position: fixed;
+	z-index: 999;
+	top: 2.5%;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.lightbox img{
+	border: .em solid #fff;
+	width: auto;
+	margin: 0 auto;
+	max-height: 90%;
+}
+
+.lightbox-caption{
+	position: absolute;
+	font: 10pt Kalinga;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+}
+
+
+/*For both about.html and template.html content */
+
+#content {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 6em;
+	text-align: center;
+	font-family: Kalinga;
+	color: #f3fdff;
+}
+

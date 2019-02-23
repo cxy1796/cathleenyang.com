@@ -1,0 +1,52 @@
+@import url('style.css');
+
+#content {
+	padding-bottom: 15em;
+}
+
+#content h1 {
+	font-weight: 700;
+	font-size: 2.5em;
+	padding-top: 1em;
+	color: #f3fdff;
+}
+
+#content h2 {
+	font-size: 1em;
+	padding: 1.5em;
+	color: #f3fdff;
+}
+
+#content img {
+	padding: 2em;
+}
+
+#content p {
+	line-height: 1.5em;
+	padding: 2em;
+}
+
+
+/*#content>p a:visited {
+	color: #DBE4E5;
+}*/
+
+#content ul {
+	width: 70%;
+	line-height: 1.5em;
+
+}
+#content li {
+	text-align: left;
+	list-style-type: circle;
+	
+}
+
+#content div {
+	width: 70%;
+}
+
+#content>p a, #content li a{
+	text-decoration: underline;
+	color: #33a0b7;
+}

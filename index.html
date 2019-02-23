@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="msvalidate.01" content="02EA4F6C6E2A9CE431CB6147290B7927" />
+	<title>Cathleen Yang</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="slidebox-master/slidebox.js"></script> 
+
+</head>
+<body id="home">
+	
+<div id="container">
+	<header>
+		<div id="top_bar"></div>
+		<div id="nav_content">
+			<div id="logo">
+				<a href="index.html">
+					<div id="logo_img"><img src="images/logo-small.svg" alt=""></div>
+				</a>
+				<h1>CATHLEEN <span style="color: #33a0b7">YANG</span></h1>
+			</div>
+			<nav>
+				<a href="index.html" id="worknav">Work</a>
+				<a href="resume.pdf">Résumé</a>
+				<a href="about.html" id="aboutnav">About</a>				
+			</nav>
+		</div>
+	</header>
+
+	<div class="carousel">
+		<ul id="carousel_content">
+			<li class="main_content">
+				<a href="getcrackin.html">
+					<img src="images/GetCrackinPreview.png" alt="" class="work" data-caption="">
+				</a>
+			</li>
+			<li class="main_content">
+				<a href="bose.html">
+					<img src="images/BosePreview.png" alt="" class="work" data-caption="">
+				</a>
+			</li>
+			<li class="main_content">
+				<a href="skyhopper.html">
+					<img src="images/SkyhopperPreview.png" alt="" class="work" data-caption="Screen designs for a mobile game. Made in Adobe Illustrator and Photoshop. Link to design guide and flow diagram: https://goo.gl/4N7gMu">
+				</a>
+			</li>
+			<li class="main_content">
+				<a href="her.html">
+					<img src="images/herPreview.png" alt="" data-caption="Promotional website project for a movie. Developed with HTML5, CSS3, and JavaScript. Link: https://people.rit.edu/~cxy1796/240/assignment2/index.html">
+				</a>
+			</li>
+			<li class="main_content">
+				<a href="javas.html">
+					<img src="images/JavasHomePreview.png" alt="" class="work" data-caption="Designs for a class project to redo a website's design. Made in Adobe Illustrator and Photoshop.">
+				</a>
+			</li>
+			<li class="main_content">
+				<a href="dragonmandering.html">
+					<img src="images/TilesPreview.png" alt="" class="work" data-caption="Resource tiles for Dragon-Mandering, a game about dragons, gerrymandering, and possibly destroying friendships. Made in Adobe Illustrator.">
+				</a>
+			</li>
+			<li class="main_content">
+				<a href="joe.html">
+					<img src="images/JoePreview.png" alt="" class="work" data-caption="Character concept for a personal comic in development. Made in Adobe Illustrator.">
+				</a>
+			</li>
+			<li class="main_content">
+				<a href="untitledpainting.html">
+					<img src="images/PracticePreview.png" alt="" class="work" data-caption="Practice piece focused on a paint-like style. Made in Photoshop.">
+				</a>
+			</li>
+			<li class="main_content">
+				<a href="mugdesign.html">
+					<img src="images/MugPreview.png" alt="" class="work" data-caption="Mug design for RIT's Department of Modern Languages and Cultures. Made in Adobe Illustrator and Photoshop.">
+				</a>
+			</li>
+			<li>
+				<a href="OwlPlanet.html">
+					<img src="images/OwlPreview.png" alt="">
+				</a>
+			</li>
+		<!-- 	<li>
+				<a href="theredstring.html">
+					<img src="images/TheRedStringPreview.png" alt="">
+				</a>
+			</li> -->
+		</ul>
+	
+	</div>
+
+	<div class="carousel-left">&lt;&lt; prev</div>
+	<div class="carousel-right">next &gt;&gt;</div>
+
+
+	<footer>
+		<div id="footer_bar">
+			<div id="footer_info">
+				<p id="contact">Contact 510.754.8016 | yangcathleen@gmail.com</p>
+				<p id="copyright">Copyright &copy; 2016 Cathleen Yang</p>
+			</div>
+		</div>
+	</footer>
+</div>
+
+		<script>
+		window.onresize = function(evt)
+		{
+
+			var myDiv = document.getElementById("carousel_content");
+
+			var newHeight = window.innerHeight * 0.4;
+			//console.log(window.innerHeight); 
+
+			/*$("#carousel_content img").each(function(){
+				$(this).attr("width",somewidth).attr("height",newHeight); 
+
+			});*/
+ -->
+			myDiv.setAttribute("style", "height: "+newHeight+"px");
+		}
+		</script>
+		<script>
+			slidebox({
+            container : ".carousel",
+            leftTrigger : ".carousel-left",
+            rightTrigger : ".carousel-right",
+            speed : "fast",
+            length : "400"
+        });
+		</script>
+
+</body>
+
+</html>

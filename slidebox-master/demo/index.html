@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Slidebox Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+    </head>
+    
+    <body>
+        <div class="carousel-left">Prev</div>
+        <div class="carousel-right">Next</div>
+        
+        <div class="carousel-cont">
+            <ul class="carousel">
+                <li>
+                    <a href="http://lorempixel.com/800/500">
+                        <img src="http://lorempixel.com/200/150" data-caption="This is a caption">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://placekitten.com/800/650">
+                        <img src="http://placekitten.com/200/150" data-caption="This is another caption">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://placesheen.com/825/1200">
+                        <img src="http://placesheen.com/200/150" data-caption="This is a caption">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://flickholdr.com/555/865">
+                        <img src="http://flickholdr.com/200/150" data-caption="This is a caption">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://placedog.com/700/800">
+                        <img src="http://placedog.com/200/150" data-caption="This is a caption">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://fillmurray.com/625/800">
+                        <img src="http://fillmurray.com/200/150" data-caption="This is a caption">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://nicenicejpg.com/500/600">
+                        <img src="http://nicenicejpg.com/200/150" data-caption="This is a caption">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://placecage.com/800/500">
+                        <img src="http://placecage.com/200/150" data-caption="This is a caption">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://placebear.com/900/750">
+                        <img src="http://placebear.com/200/150" data-caption="This is a caption">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://baconmockup.com/500/600">
+                        <img src="http://baconmockup.com/200/150" data-caption="This is a caption">
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+
+    </body>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../slidebox.min.js"></script>
+    <script>
+        slidebox({
+            container : ".carousel-cont",
+            leftTrigger : ".carousel-left",
+            rightTrigger : ".carousel-right",
+            speed : "fast",
+            length : "250"
+        });
+    </script>
+
+</html>
